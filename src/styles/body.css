@@ -49,6 +49,7 @@ align-items: center;
 }
 .buttons{
     display: flex;
+    margin-bottom: 1.5rem;
 }
 .quantity{
     display: flex;
@@ -112,10 +113,10 @@ align-items: center;
         z-index: 0.5;
     }
     p{
-        font-size: x-small;
+        font-size: medium;
     }
      h1 ,h2 ,h3{
-        font-size: medium;
+        font-size: large;
     }
     .title{
         margin-bottom: 0.5rem;
