@@ -1,25 +1,34 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useEffect, useState } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+import NavigationBar from './components/NavigationBar';
+import Body from './components/Body';
+import { store } from './utility/store';
+import { Provider } from 'react-redux';
+import Carousel from './components/Carousel';
 
 function App() {
+  const [isMobile, setMobile] = useState(false);
+  const [popup ,setPopup] = useState(true)
+  const handelResize = () => {
+    if (window.innerWidth <= 750) {
+      console.log(window.innerWidth)
+      setMobile(true);
+    } else {
+      setMobile(false);
+    }
+  };
+  useEffect(() => {
+    window.addEventListener("load", handelResize);
+  });
   return (
+    <Provider store={store}>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavigationBar isMobile={isMobile} />
+      <Carousel close={()=>setPopup(true)} popup={popup} />
+      <Body isMobile={isMobile} openCarosel={()=>setPopup(false)}/>
     </div>
+    </Provider>
   );
 }
 

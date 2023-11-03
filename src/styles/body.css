@@ -1,0 +1,163 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@700&display=swap');
+
+.productBody{
+    height: 90%;
+    width: 55vw;
+    margin-top: 8rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: relative;
+    z-index: 0.5;
+}
+.description-container{
+    margin-left: 6rem;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
+.head-title{
+    font-weight: bold;
+}
+.description{
+    color:hsl(220, 14%, 75%) ;
+}
+.diplay-flex-price{
+display: flex;
+justify-content: flex-start;
+align-items: center;
+}
+.price-after-sale{
+    font-family: 'Kumbh Sans', sans-serif;
+    font-weight: bold;
+    margin: 0;
+}
+.discount{
+    margin: 0 0 0 1rem;
+    padding: 0 0.4rem ;
+    background-color:hsl(25, 100%, 94%);
+    color:hsl(26, 100%, 55%);
+    border-radius: 0.2rem;
+    font-weight:bold
+}
+.real-price{
+    margin-top: 0.5rem;
+    text-decoration: line-through;
+    color:  hsl(220, 14%, 75%)
+}
+.buttons{
+    display: flex;
+}
+.quantity{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: hsl(223, 64%, 98%);
+    border: none;
+    width:10rem;
+    height:3rem;
+    border-radius: 0.5rem;
+}
+.plus-minus{
+    text-align: center;
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: transparent;
+    border: none;
+    color: hsl(26, 100%, 55%);
+    font-size: x-large;
+    font-weight: bold;
+}
+
+
+
+.product-images{
+    height: 70vh;
+}
+.title{
+    color: hsl(26, 100%, 55%);
+    font-weight: bold;
+}
+.add-to-cart{
+    background-color:hsl(26, 100%, 55%) ;
+    font-weight:700;
+    margin-left: 1rem;
+    border: none;
+    width: 15rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    color: white;
+    display: flex;
+    justify-content:center;
+    align-items:center ;
+}
+.add-to-cart:hover{
+    filter: opacity(0.5);
+}
+.button-cart{
+    margin-right: 0.5rem;
+}
+
+@media screen and (max-width:700px) {
+    .productBody{
+        height: 90vh;
+        width: 100vw;
+        margin-top: 0rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: relative;
+        z-index: 0.5;
+    }
+    p{
+        font-size: x-small;
+    }
+     h1 ,h2 ,h3{
+        font-size: medium;
+    }
+    .title{
+        margin-bottom: 0.5rem;
+    }
+    .description{
+        margin-bottom: 0rem; 
+    }
+    .head-title{
+        margin: 0;
+    }
+    .discount {
+        margin: 0 0 0 0.5rem;
+    }
+    .button-cart{
+        transform: scale(0.6);
+    }
+
+    .mobile-flex{
+        display: flex;
+        justify-content: space-between;
+    }
+    .productBody{
+        flex-direction: column;
+    }
+    .description-container{
+        margin-left: 0;
+        padding: 0.5rem 1.5rem;
+        height: 60%;
+    }
+    .buttons{
+        flex-direction: column;
+        align-items: center;
+    }
+    .quantity{
+        width: 100%;
+        height:2rem;
+    }
+    .add-to-cart{
+        font-size: small;
+        width: 100%;
+        margin-left: 0;
+        height:2rem;
+        margin-top: 0.5rem;
+    }
+}
