@@ -57,7 +57,7 @@ nav {
   width: 40vw;
 }
 ul {
-  margin: 0% !important;
+  margin: 0 0 0 2vw !important;
   padding: 0%;
   display: flex;
   list-style: "none";
@@ -83,7 +83,7 @@ li {
 .icon {
   border-radius: 100%;
   border: 2px solid transparent;
-  width: 3.5rem;
+  width:3.5rem;
   height: 3.5rem;
 }
 
@@ -176,6 +176,18 @@ li {
   margin-bottom: 0;
   font-weight: bold;
   color: grey;
+}
+@media screen and (max-width:1522px) {
+  ul{
+    margin:  0 0 0 10px !important;
+  }
+  .links{
+    width: 50vw;
+  }
+  .icon{
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 }
 @media screen and (max-width: 700px) {
   .App{

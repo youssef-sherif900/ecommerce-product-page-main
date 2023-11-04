@@ -28,7 +28,7 @@ function ProductImages({open}:Open) {
       <Image
         src={productImage}
         AR={"1/1"}
-        imgWidth={"30rem"}
+        imgWidth={"25vw"}
         borderRadius={"1.5rem"}
         click={open}
       />
@@ -47,7 +47,7 @@ function ProductImages({open}:Open) {
               key={ind}
               src={image[0]}
               AR={"1/1"}
-              imgWidth={"7rem"}
+              imgWidth={"5vw"}
               borderRadius={"1rem"}
               val={image[1]}
               click={(e) => {
